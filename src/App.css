@@ -1,0 +1,147 @@
+.row {
+  align-items: center;
+}
+
+.d-flex {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  align-content: stretch;
+  flex-wrap: wrap;
+}
+
+.card-header {
+  display: flex !important;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-content: space-between;
+  font-family: Salsa;
+  font-size: 1.5rem;
+  background-color: #111111;
+  background-image: linear-gradient(32deg,
+      rgba(8, 8, 8, 0.74) 30px,
+      transparent);
+  background-size: 60px 60px;
+  background-attachment: fixed;
+  background-position: center;
+  text-shadow: 0 0 10px rgb(218, 27, 27),
+    0 0 40px whitesmoke,
+    0 0 50px whitesmoke,
+    0 0 100px whitesmoke;
+}
+.total{
+  color:#f8f530;
+  font-family:Bungee ;
+  text-shadow: 0 0 10px #be061f,
+  0 0 40px #DC364C,
+  0 0 50px #DC364C,
+  0 0 100px #DC364C;
+}
+.card-header span:hover {
+  font-weight: 1000;
+}
+
+.card {
+  max-width: 1024px;
+  transition: transform 0.01s ease;
+  background: linear-gradient(80deg, #e5ff00, #90ee90, #e3f16a);
+  background-size: 200% 100%;
+  animation: wave 5s linear infinite;
+}
+
+@keyframes wave {
+  0% {
+    background-position: 0% 0;
+  }
+
+  50% {
+    background-position: 100% 0;
+  }
+
+  100% {
+    background-position: 0% 0;
+  }
+}
+
+.card:hover {
+  transform: scale(1.02);
+  behavior: smooth;
+  box-shadow: 0 0 10px grey,
+    0 0 20px grey,
+    0 0 40px grey,
+    0 0 50px grey;
+}
+
+.col-md-4 {
+  padding: 5px !important;
+}
+
+.btn {
+  justify-content: center !important;
+}
+
+#plus:hover {
+  color: green;
+
+}
+
+#minus:hover {
+  color: #DC364C;
+}
+
+.button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgb(20, 20, 20);
+  border: none;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.164);
+  cursor: pointer;
+  transition-duration: .3s;
+  overflow: hidden;
+  position: relative;
+}
+
+.svgIcon {
+  width: 12px;
+  transition-duration: .3s;
+}
+
+.svgIcon path {
+  fill: white;
+}
+
+.button:hover {
+  width: 100px;
+  border-radius: 50px;
+  transition-duration: .3s;
+  background-color: rgb(255, 69, 69);
+  align-items: center;
+}
+
+.button:hover .svgIcon {
+  width: 50px;
+  transition-duration: .3s;
+  transform: translateY(60%);
+}
+
+.button::before {
+  position: absolute;
+  top: -20px;
+  content: "Delete";
+  color: white;
+  transition-duration: .3s;
+  font-size: 2px;
+}
+
+.button:hover::before {
+  font-size: 13px;
+  opacity: 1;
+  transform: translateY(30px);
+  transition-duration: .3s;
+}
