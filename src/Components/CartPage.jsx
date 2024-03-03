@@ -71,7 +71,7 @@ const CartPage = () => {
                             </div>
                         </div>
                         <div className="col-md-5">
-                            <div className="card-body">
+                            <div className="card-body" >
                                 <h4 className="card-text">{item.brand}</h4>
                                 <h6 className="card-title">{item.title}</h6>
                                 <h4>${item.price}</h4>
